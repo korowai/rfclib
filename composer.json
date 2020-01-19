@@ -1,0 +1,42 @@
+{
+    "name": "korowai/rfclib",
+    "description": "Support for several RFCs",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Paweł Tomulik",
+            "email": "ptomulik@meil.pw.edu.pl"
+        }
+    ],
+    "suport": {
+      "issues": "https://github.com/korowai/framework/issues",
+      "source": "https://github.com/korowai/framework"
+    },
+    "require": {
+        "php": ">=7.2",
+        "korowai/contracts": "*",
+        "korowai/compatlib": "*"
+    },
+    "autoload": {
+      "psr-4" : {
+        "Korowai\\Lib\\Rfc\\" : "src/"
+      },
+      "files" : [
+      ],
+      "exclude-from-classmap": [
+        "/tests/",
+        "/tests-nocov/",
+        "/Testing/"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4" : {
+        "Korowai\\Tests\\Lib\\Rfc\\" : "tests/",
+        "Korowai\\TestsNocov\\Lib\\Rfc\\" : "tests-nocov/",
+        "Korowai\\Testing\\Rfclib\\" : "Testing/"
+      }
+    }
+}
